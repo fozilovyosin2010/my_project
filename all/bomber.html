@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bomber</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./general.css" />
+  </head>
+  <body>
+    <script src="../script.js"></script>
+    <header class="header">
+      <div class="part">
+        <a href="../index.html" class="logo">Logo</a>
+        <button onclick="myIcon()" id="icon">
+          <i class="bx bx-menu"></i>
+        </button>
+        <button id="close" onclick="myClose()">&times</button>
+      </div>
+      <nav class="navbar" id="navbar">
+        <a href="#">Foods</a>
+        <a href="#">Clothes</a>
+        <a href="#">Kids' world</a>
+      </nav>
+    </header>
+    <div class="section_1">
+      <div class="block_1_s_1">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+        />
+      </div>
+      <div class="block_2_s_1">
+        <table>
+          <tr>
+            <td>Discription</td>
+            <td>Value</td>
+          </tr>
+          <tr>
+            <td>Color</td>
+            <td>Red, yelow</td>
+          </tr>
+          <tr>
+            <td>Brand</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td>$400</td>
+          </tr>
+          <button onclick="alert('hired')" class="btn_1">Hire it</button>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

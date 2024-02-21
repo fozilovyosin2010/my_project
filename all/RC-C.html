@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rc Cola</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./general.css" />
+  </head>
+  <body>
+    <script src="../script.js"></script>
+    <header class="header">
+      <div class="part">
+        <a href="../index.html" class="logo">Logo</a>
+        <button onclick="myIcon()" id="icon">
+          <i class="bx bx-menu"></i>
+        </button>
+        <button id="close" onclick="myClose()">&times</button>
+      </div>
+      <nav class="navbar" id="navbar">
+        <a href="#">Foods</a>
+        <a href="#">Clothes</a>
+        <a href="#">Kids' world</a>
+      </nav>
+    </header>
+    <div class="section_1">
+      <div class="block_1_s_1">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+        />
+      </div>
+      <div class="block_2_s_1">
+        <table>
+          <tr>
+            <td>Discription</td>
+            <td>Value</td>
+          </tr>
+          <tr>
+            <td>Color</td>
+            <td>Black</td>
+          </tr>
+          <tr>
+            <td>Brand</td>
+            <td>RC Cola</td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td>$12</td>
+          </tr>
+          <button onclick="alert('hired')" class="btn_1">Hire it</button>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

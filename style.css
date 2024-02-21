@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.footer {
+  color: #fff;
+  font-size: 25px;
+  padding: 5%;
+  background: linear-gradient(320deg, blue, green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer table tr a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+.footer table tr {
+  padding: 50px 50%;
+}
+.footer table tr td,
+.footer table tr th {
+  padding: 20px 100px;
+  border-bottom: 1px solid #fff;
+}
+.footer table {
+  border-collapse: collapse;
+}
+body {
+  background: linear-gradient(320deg, blue, red);
+}
+.header #icon,
+.header #close {
+  display: none;
+}
+.header button {
+  background: transparent;
+  border: none;
+  font-size: 2em;
+  color: #fff;
+  font-weight: 800;
+}
+.header .part {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.header {
+  display: flex;
+  padding: 0 10%;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(50px);
+  gap: 30px;
+}
+.header .navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  padding: 10px;
+  transition: 0.5s;
+}
+.header .navbar a:hover {
+  text-decoration: none;
+  background: linear-gradient(320deg, red, yellow);
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  border-radius: 15px;
+  padding: 10px;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.header .logo {
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2.5% 0;
+  background: linear-gradient(320deg, yellow, green);
+}
+.search-bar button {
+  background-color: blue;
+  color: #fff;
+  transition: 0.5s;
+}
+.search-bar button:hover {
+  background: linear-gradient(320deg, blue, black);
+  color: #fff;
+  padding: 12px 40px;
+}
+.search-bar input,
+.search-bar button {
+  outline: none;
+  padding: 12px 24px;
+  border-radius: 15px;
+  border: navajowhite;
+}
+.section_1,
+.section_2,
+.section_4,
+.section_3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+  color: #fff;
+  padding: 0 800px;
+}
+.section_1 .block_1_s_1 img,
+.section_3 .block_1_s_3 img,
+.section_4 .block_1_s_4 img,
+.section_2 .block_1_s_2 img {
+  width: 150px;
+  height: 100px;
+}
+.section_1 .block_1_s_1,
+.section_3 .block_1_s_3,
+.section_4 .block_1_s_4,
+.section_2 .block_1_s_2 {
+  display: flex;
+  padding: 0 50px;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2%;
+  font-size: 12px;
+}
+.section_1 .block_1_s_1 .mini_block_1_s_1,
+.section_1 .block_1_s_1 .mini_block_2_s_1,
+.section_1 .block_1_s_1 .mini_block_3_s_1,
+.section_1 .block_1_s_1 .mini_block_4_s_1,
+.section_1 .block_1_s_1 .mini_block_5_s_1,
+.section_1 .block_1_s_1 .mini_block_6_s_1,
+.section_1 .block_1_s_1 .mini_block_7_s_1,
+.section_3 .block_1_s_3 .mini_block_1_s_3,
+.section_3 .block_1_s_3 .mini_block_2_s_3,
+.section_3 .block_1_s_3 .mini_block_3_s_3,
+.section_3 .block_1_s_3 .mini_block_4_s_3,
+.section_3 .block_1_s_3 .mini_block_5_s_3,
+.section_2 .block_1_s_2 .mini_block_1_s_2,
+.section_2 .block_1_s_2 .mini_block_2_s_2,
+.section_2 .block_1_s_2 .mini_block_3_s_2,
+.section_4 .block_1_s_4 .mini_block_1_s_4,
+.section_4 .block_1_s_4 .mini_block_2_s_4,
+.section_4 .block_1_s_4 .mini_block_3_s_4 {
+  display: flex;
+  border-radius: 15px;
+  background: linear-gradient(320deg, red, yellow);
+  padding: 50px 70px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+}
+@media screen and (max-width: 475px) {
+  .header .navbar {
+    display: none;
+    flex-direction: column;
+  }
+  .header #icon {
+    display: block;
+    position: relative;
+    right: 5%;
+  }
+  .header .logo {
+    position: relative;
+    right: 50%;
+  }
+  .header {
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0 5%;
+  }
+  .section_1,
+  .section_2,
+  .section_3,
+  .section_4,
+  .footer {
+    overflow-y: scroll;
+    padding: 0 5%;
+    flex-wrap: wrap;
+  }
+}

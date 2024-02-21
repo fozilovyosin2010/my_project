@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: linear-gradient(320deg, red, purple);
+}
+.header #icon,
+.header #close {
+  display: none;
+}
+.header button {
+  background: transparent;
+  border: none;
+  font-size: 2em;
+  color: #fff;
+  font-weight: 800;
+}
+.header .part {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(320deg, purple, red);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(50px);
+  gap: 30px;
+}
+.header .navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  padding: 10px;
+  transition: 0.5s;
+}
+.header .navbar a:hover {
+  text-decoration: none;
+  background: linear-gradient(320deg, red, yellow);
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  border-radius: 15px;
+  padding: 10px;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.header .logo {
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.section_1 {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.section_1 .block_1_s_1 img {
+  width: 400px;
+  height: 400px;
+}
+.section_1 .block_2_s_1 {
+  border: 1px solid gray;
+  border-radius: 13px;
+  background: linear-gradient(200deg, blue, orange);
+  padding: 100px 50px;
+  color: #fff;
+}
+.section_1 .block_2_s_1 table tr td {
+  padding: 20px 100px;
+  border-bottom: 1px solid #fff;
+}
+.section_1 .block_2_s_1 table {
+  border-collapse: collapse;
+}
+.btn_1 {
+  padding: 15px 52%;
+  border-radius: 12px;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 12px;
+  background: linear-gradient(320deg, yellow, purple);
+  transition: 0.6s;
+}
+.btn_1:hover {
+  padding: 15px 52%;
+  border-radius: 12px;
+  border: none;
+  background: black;
+  color: #fff;
+  font-weight: 800;
+  font-size: 12px;
+}
+@media screen and (max-width: 600px) {
+  .header #icon {
+    display: block;
+  }
+
+  .header .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .navbar a:hover {
+    text-decoration: none;
+    background: linear-gradient(320deg, red, yellow);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 10px 100%;
+  }
+  .header {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 600px) {
+    .section_1 {
+      gap: 5px;
+      flex-direction: column;
+    }
+    .section_1 .block_1_s_1 img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

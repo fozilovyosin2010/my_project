@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coat</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../all/general.css" />
+  </head>
+  <body>
+    <script src="../script.js"></script>
+    <header class="header">
+      <div class="part">
+        <a href="../index.html" class="logo">Logo</a>
+        <button onclick="myIcon()" id="icon">
+          <i class="bx bx-menu"></i>
+        </button>
+        <button id="close" onclick="myClose()">&times</button>
+      </div>
+      <nav class="navbar" id="navbar">
+        <a href="#">Foods</a>
+        <a href="#">Clothes</a>
+        <a href="#">Kids' world</a>
+      </nav>
+    </header>
+    <div class="section_1">
+      <div class="block_1_s_1">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+        />
+      </div>
+      <div class="block_2_s_1">
+        <table>
+          <tr>
+            <td>Discription</td>
+            <td>Value</td>
+          </tr>
+          <tr>
+            <td>Color</td>
+            <td>Black</td>
+          </tr>
+          <tr>
+            <td>Brand</td>
+            <td>Versachi</td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td>$50</td>
+          </tr>
+          <button onclick="alert('hired')" class="btn_1">Hire it</button>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
